@@ -17,7 +17,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with Report Portal.  If not, see <http://www.gnu.org/licenses/>.
- */
+ */ 
 /*
  * This file is part of Report Portal.
  *
@@ -162,10 +162,10 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 	}
 
 	@Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedMethods("GET", "PUT", "POST", "DELETE");
-    }
+	public void addCorsMappings(CorsRegistry registry) {
+      registry.addMapping("/**")
+				.allowedMethods("GET", "PUT", "POST", "DELETE");
+  }
 
 	@Bean
 	public BeanValidationPostProcessor beanValidationPostProcessor() {
